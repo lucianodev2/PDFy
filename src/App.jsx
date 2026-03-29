@@ -2,6 +2,7 @@ import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import { ThemeProvider } from './contexts/ThemeContext'
 import ThemeToggle from './components/ThemeToggle'
 import Home from './pages/Home'
+import Login from './pages/Login'
 import ResumeSimple from './pages/ResumeSimple'
 import ResumeProfessional from './pages/ResumeProfessional'
 import ConvertToPDF from './pages/ConvertToPDF'
@@ -170,6 +171,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/resume/simple" element={<ResumeSimple />} />
             <Route path="/resume/professional" element={<ResumeProfessional />} />
             <Route path="/convert/to-pdf" element={<ConvertToPDF />} />
