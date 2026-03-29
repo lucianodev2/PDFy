@@ -43,8 +43,8 @@ function Login() {
           {/* Main Form */}
           <main className="login-main">
             <div className="login-intro">
-              <h1>Welcome back</h1>
-              <p>Sign in to access your documents and tools</p>
+              <h1>Bem-vindo de volta</h1>
+              <p>Entre para acessar seus documentos e ferramentas</p>
             </div>
 
             {/* Social Login */}
@@ -56,29 +56,29 @@ function Login() {
                   <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
                   <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
                 </svg>
-                Continue with Google
+                Continuar com Google
               </button>
               
               <button className="social-btn" type="button">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="#1877F2">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
-                Continue with Facebook
+                Continuar com Facebook
               </button>
             </div>
 
             <div className="divider">
-              <span>or</span>
+              <span>ou</span>
             </div>
 
             {/* Email Login Form */}
             <form onSubmit={handleSubmit} className="login-form">
               <div className="form-field">
-                <label htmlFor="email">Email address</label>
+                <label htmlFor="email">Endereco de email</label>
                 <input
                   type="email"
                   id="email"
-                  placeholder="you@example.com"
+                  placeholder="voce@exemplo.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -86,11 +86,11 @@ function Login() {
               </div>
 
               <div className="form-field">
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">Senha</label>
                 <input
                   type="password"
                   id="password"
-                  placeholder="Enter your password"
+                  placeholder="Digite sua senha"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
@@ -101,10 +101,10 @@ function Login() {
                 <label className="checkbox-field">
                   <input type="checkbox" />
                   <span className="checkmark"></span>
-                  <span className="label-text">Remember me</span>
+                  <span className="label-text">Lembrar-me</span>
                 </label>
                 <Link to="/forgot-password" className="text-link">
-                  Forgot password?
+                  Esqueceu a senha?
                 </Link>
               </div>
 
@@ -113,19 +113,19 @@ function Login() {
                 className="btn-primary"
                 disabled={isLoading}
               >
-                {isLoading ? 'Signing in...' : 'Sign in'}
+                {isLoading ? 'Entrando...' : 'Entrar'}
               </button>
             </form>
 
             <p className="signup-prompt">
-              Don't have an account?{' '}
-              <Link to="/signup" className="text-link">Create account</Link>
+              Nao tem uma conta?{' '}
+              <Link to="/signup" className="text-link">Criar conta</Link>
             </p>
           </main>
 
           {/* Footer */}
           <footer className="login-footer">
-            <p>Protected by reCAPTCHA and subject to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></p>
+            <p>Protegido por reCAPTCHA e sujeito aos nossos <a href="#">Termos de Privacidade</a> e <a href="#">Termos de Servico</a></p>
           </footer>
         </div>
       </div>
@@ -164,26 +164,26 @@ function Login() {
 
           {/* Hero Text */}
           <h2 className="hero-title">
-            Manage your PDFs with ease
+            Gerencie seus PDFs com facilidade
           </h2>
           <p className="hero-subtitle">
-            Edit, convert, sign, and organize your documents in one secure platform. 
-            Built for professionals who value efficiency.
+            Edite, converta, assine e organize seus documentos em uma plataforma segura.
+            Feito para profissionais que valorizam eficiencia.
           </p>
-
+                    
           {/* Stats */}
           <div className="hero-stats">
             <div className="stat">
               <span className="stat-value">10M+</span>
-              <span className="stat-label">Documents processed</span>
+              <span className="stat-label">Documentos processados</span>
             </div>
             <div className="stat">
               <span className="stat-value">50+</span>
-              <span className="stat-label">PDF tools</span>
+              <span className="stat-label">Ferramentas PDF</span>
             </div>
             <div className="stat">
               <span className="stat-value">99.9%</span>
-              <span className="stat-label">Uptime</span>
+              <span className="stat-label">Disponibilidade</span>
             </div>
           </div>
         </div>
